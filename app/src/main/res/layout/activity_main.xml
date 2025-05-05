@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo: Daha yukarıda görünsün diye margin azaltıldı -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logoImage"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/guncellogo"
+        android:contentDescription="Osem Logo" />
+
+    <!-- Tüm butonlar arasında tutarlı margin ve textColor -->
+    <Button
+        android:id="@+id/buttonAddPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#B0784E"
+        android:elevation="4dp"
+        android:text="Kişi Ekle"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonnewmeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E3634F"
+        android:text="Yeni Yemek Ekle"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonMealSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#44A8E0"
+        android:elevation="4dp"
+        android:text="Yemek Seç"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonPersonExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#F5A623"
+        android:elevation="4dp"
+        android:text="Kişi Harcamaları"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonGeneralExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF6F91"
+        android:elevation="4dp"
+        android:text="Mutfak Giderleri"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonkesintiler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7A4EAD"
+        android:elevation="4dp"
+        android:text="Kesintiler"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kişi Bilgileri"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Kişi Arama -->
+        <SearchView
+            android:id="@+id/searchViewPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:queryHint="Kişi ara..."
+            android:iconifiedByDefault="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Kişi Seçimi -->
+        <Spinner
+            android:id="@+id/spinnerPersonSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Kart Görünüm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/card_background"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <!-- Ad Soyad -->
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ad Soyad: -"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Tip -->
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip: -"
+                android:textSize="18sp"
+                android:textColor="#424242"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Aylık Gider -->
+            <TextView
+                android:id="@+id/textViewMonthlyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aylık Gider: -"
+                android:textSize="18sp"
+                android:textColor="#D32F2F"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Yıllık Gider -->
+            <TextView
+                android:id="@+id/textViewYearlyExpense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yıllık Gider: -"
+                android:textSize="18sp"
+                android:textColor="#D32F2F" />
+        </LinearLayout>
+
+        <!-- Harcama Düzenleme Butonu -->
+        <Button
+            android:id="@+id/buttonEditExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#347355"
+            android:text="Harcamaları Düzenle"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

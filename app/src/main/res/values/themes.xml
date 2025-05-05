@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.OsemProjeSon" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Renk ve tema ayarların burada -->
+
+        <!-- Varsayılan font -->
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+</resources>

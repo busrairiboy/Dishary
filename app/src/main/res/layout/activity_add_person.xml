@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FAFAFA"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPersonActivity">
+
+    <!-- Üst Başlık -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni Kişi Ekle"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Ad -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ad"
+        android:padding="12dp"
+        android:backgroundTint="#CCCCCC"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <!-- Soyad -->
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Soyad"
+        android:padding="12dp"
+        android:backgroundTint="#CCCCCC"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <!-- Tip -->
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Kaydet Butonu -->
+    <Button
+        android:id="@+id/buttonSavePerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#347355"
+        android:elevation="4dp"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="32dp" />
+
+    <!-- Kişi Listesi Başlığı -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıtlı Kişiler"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#444444"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Ara -->
+    <SearchView
+        android:id="@+id/searchViewPersons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Kişi Ara..."
+        android:iconifiedByDefault="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Liste ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPersons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp" />
+    </ScrollView>
+
+</LinearLayout>

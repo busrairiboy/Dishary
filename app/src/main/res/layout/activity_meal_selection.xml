@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MealSelectionActivity">
+
+    <!-- Kişi Seçim Bölümü -->
+    <LinearLayout
+        android:id="@+id/layoutPersonSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kişi Seçimi"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <SearchView
+            android:id="@+id/searchViewPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Kişi ara..."
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/buttonSelectPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#347355"
+            android:text="Kişiyi Seç" />
+
+    </LinearLayout>
+
+    <!-- Yemek Seçim Bölümü -->
+    <LinearLayout
+        android:id="@+id/layoutMealSelection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewSelectedPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seçilen Kişi: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:background="#E8F5E9"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonAddPredefinedMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Yemek Ekle"
+            android:layout_marginBottom="8dp" />
+
+        <SearchView
+            android:id="@+id/searchViewMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:queryHint="Yemek ara..." />
+
+        <ListView
+            android:id="@+id/listViewMeals"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toplam: 0.00₺"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/buttonSaveSelectedMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+    </LinearLayout>
+</LinearLayout>

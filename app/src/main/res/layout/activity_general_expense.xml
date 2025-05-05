@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mutfak Giderleri"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Gider Adı -->
+        <EditText
+            android:id="@+id/editTextExpenseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gider Adı"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Gider Tutarı -->
+        <EditText
+            android:id="@+id/editTextExpenseAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tutar (₺)"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Kaydet Butonu -->
+        <Button
+            android:id="@+id/buttonSaveExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#9C27B0"
+            android:elevation="4dp"
+            android:text="Gideri Kaydet"
+            android:textColor="#FFFFFF" />
+
+        <!-- Giderler Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kayıtlı Giderler"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Şık Gider Kartlarının Tutulacağı Alan -->
+        <LinearLayout
+            android:id="@+id/linearLayoutExpensesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Aylık Gider -->
+        <TextView
+            android:id="@+id/textViewMonthlyExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aylık Gider: 0₺"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Yıllık Gider -->
+        <TextView
+            android:id="@+id/textViewYearlyExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yıllık Gider: 0₺"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</ScrollView>

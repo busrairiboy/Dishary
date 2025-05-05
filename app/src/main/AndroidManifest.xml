@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.osemprojeson">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OsemProjeSon"
+        tools:targetApi="31">
+
+        <!-- Ana Sayfa -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Kişi Ekleme Ekranı -->
+        <activity
+            android:name=".AddPersonActivity"
+            android:exported="false" />
+        <activity android:name=".NewMealActivity" />
+
+        <!-- Yemek Seçimi Ekranı -->
+        <activity
+            android:name=".MealSelectionActivity"
+            android:exported="false" />
+        <activity android:name=".Kesintiler"/>
+
+
+        <!-- Kişi Harcama Özeti Ekranı -->
+        <activity
+            android:name=".PersonExpenseSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GeneralExpenseActivity"
+            android:exported="false" />
+        <activity android:name=".PredefinedMeal"
+            android:exported="false" />
+
+
+
+
+    </application>
+
+</manifest>

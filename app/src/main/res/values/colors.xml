@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Kart Renkleri -->
+    <color name="staffColor">#B8E1AE</color>  <!-- Daha canlı bir turkuaz/mavi (Personel) -->
+    <color name="guestColor">#B9CAE4</color>  <!-- Daha sıcak bir turuncu/şeftali (Misafir) -->
+
+    <!-- Diğer UI Renkleri -->
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="cardShadow">#DDDDDD</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+
+    <!-- Buton Renkleri -->
+    <color name="buttonSuccess">#4CAF50</color>  <!-- Yeşil - başarılı işlemler için -->
+    <color name="buttonDanger">#F44336</color>   <!-- Kırmızı - silme işlemleri için -->
+    <color name="buttonWarning">#FFC107</color>  <!-- Sarı - uyarı işlemleri için -->
+
+    <!-- Temel Renkler -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>
